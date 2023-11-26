@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 // import axios from "axios";
 import { Dna } from "react-loader-spinner"
 import axios from "../axios";
-import "../scss/screen/Register.scss"
+import "../scss/screen/register.scss"
 import { createAccount } from "../toolkit/slices/user/userSlice";
 function RegisterStage1() {
 
