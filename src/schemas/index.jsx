@@ -57,6 +57,7 @@ export const financialSchema = Yup.object({
 export const signUpUserSchema = Yup.object({
     email: Yup
         .string()
+        .matches(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/, 'Invalid email format')
         .email("Must be a valid mail")
         .test('unique-email', 'Email already exists', asyncMailValidation)
         .required("Your email address"),
