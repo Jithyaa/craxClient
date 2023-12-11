@@ -59,19 +59,15 @@ function HomePage() {
                                     <td>{data.email}</td>
                                 </tr>
                                 <tr>
-                                    <td>Date of Birth:</td>
-                                    <td>{data.dob}</td>
-                                </tr>
-                                <tr>
                                     <td>Address:</td>
                                     <td>{data.addr}</td>
                                 </tr>
                                 <tr>
-                                    <td>Employment Status:</td>
+                                    <td>Employment Status: </td>
                                     <td>{data.status}</td>
                                 </tr>
                                 <tr>
-                                    <td>Savings/Investments:</td>
+                                    <td>Savings/Investments: </td>
                                     <td>{data.savings}</td>
                                 </tr>
                             </tbody>
