@@ -44,17 +44,42 @@ function HomePage() {
                     wrapperClass="dna-wrapper"
                 />
             }
-            {
-                !isLoading && data &&
-
+            {!isLoading && data && (
                 <div className="register-container">
                     <div className="data-wel">
-                        <p>Welcome Back {data?.fName}  your email address is {data?.email}</p>
-                        <p>Your Address is {data?.addr}</p>
-                        <pre>(The data is coming from the DataBase)</pre>
+                        <h2>User Details</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>{data.fName}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>{data.email}</td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth:</td>
+                                    <td>{data.dob}</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>{data.addr}</td>
+                                </tr>
+                                <tr>
+                                    <td>Employment Status:</td>
+                                    <td>{data.status}</td>
+                                </tr>
+                                <tr>
+                                    <td>Savings/Investments:</td>
+                                    <td>{data.savings}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        {/* <pre>(The data is coming from the Database)</pre> */}
                     </div>
                 </div>
-            }
+            )}
         </>
     )
 }
