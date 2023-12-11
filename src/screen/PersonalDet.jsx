@@ -85,8 +85,8 @@ console.log(values)
                             <div className="inp-block">
                                 <div className="input-block wxc">
                                     <div className="dropdown">
-                                        <select id="title" name="title" className="input" onChange={(e)=>setFieldValue('title',e.target.value)} value={values.title}>
-                                            <option disabled value="">Title</option>
+                                        <select id="title" name="title" className="input" onChange={(e)=>setFieldValue('title',e.target.value)} value={values.title} defaultValue="Mr">
+                                            {/* <option disabled value="">Title</option> */}
                                             <option  value="Mr">Mr</option>
                                             <option value="Mrs">Mrs</option>
                                             <option value="Ms">Ms</option>
